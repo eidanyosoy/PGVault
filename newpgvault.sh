@@ -1,4 +1,3 @@
-  GNU nano 4.8                                                  pgvault.sh
 #!/bin/bash
 #
 # Title:      PGBlitz (Reference Title File)
