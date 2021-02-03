@@ -4,6 +4,11 @@
 # Author(s):  Admin9705
 # GNU:        General Public License v3.0
 ################################################################################
+runningcheck() {
+  initial2
+  runcheck5=$(docker ps | grep ${program_var})
+  if [ "$runcheck5" != "" ]; then running=1; else running=0; fi
+}
 initial() {
   rm -rf /var/plexguide/pgvault.output 1>/dev/null 2>&1
   rm -rf /var/plexguide/pgvault.buildup 1>/dev/null 2>&1
